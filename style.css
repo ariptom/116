@@ -1,0 +1,50 @@
+h3 {
+    font-size: 25px !important;
+}
+
+.btn-success:hover {
+    background-color: rgb(37, 90, 30);
+}
+
+canvas{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from {box-shadow: 1px 1px 38px yellow}
+    to {box-shadow: 1px 1px 38px red}
+}
+#a{
+    width:100px;
+    height:100px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: something;
+    position: absolute;
+    top:0;
+}
+@keyframes something {
+    0%{position: absolute;
+       top:0;
+       background-color:red ;
+    }
+    25%{position: absolute;
+        top:0;
+        background-color:rgb(250, 95, 121) ;
+     }
+    50%{position: absolute;
+        top:50;
+        background-color:blue ;
+     }
+     75%{position: absolute;
+        top:0;
+        background-color:yellowgreen;
+     }
+     100%{position: absolute;
+        top:0;
+        background-color:green ;
+     }
+}
