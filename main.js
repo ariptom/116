@@ -1,7 +1,4 @@
-mod="mod1";
-function preload () {
-    nose=loadImage("nose.png");
-}
+function preload () {}
 function setup () {
     canvas=createCanvas(400,300);
     canvas.center();
@@ -22,28 +19,7 @@ function gotResults(results){
 }
 function draw(){
     image(video,0,0,400,300);
-    if(mod=="mod1"){
-    stroke("red");
-    fill("red");
-    circle(nosex,nosey,20);
-    }
-    else if(mod=="mod2"){
-    image(nose,nosex-10,nosey-10,40,40);
-    }
-    
-    
-}
-function swap(){
-    if(mod=="mod1"){
-        mod="mod2"
-        console.log(mod);
-    }
-    else{
-        mod="mod1"
-        console.log(mod);
-    }
-
 }
 function take_snapshot (){
     save('myimage.png');
-}
+}       
